@@ -1,0 +1,213 @@
+body {
+    margin: 0px;
+    background-color: rgb(238, 231, 217);
+}
+
+.nav-container{
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    height: 12vh;
+    background-color: #1b1b1b;
+}
+
+.navbar-logo{
+    justify-self: start;
+    margin-left: 20px;
+    color: #fff;
+    margin-top: 4vh;
+    /* cursor: pointer; */
+}
+
+.nav-container-footer{
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    margin-top: 30px;
+}
+
+.navbar-footer{
+    display: flex;
+    justify-content: space-around;
+    height: 12vh;
+    background-color: #1b1b1b;
+}
+
+.navbar-logo-footer{
+    justify-self: start;
+    margin-left: 20px;
+    color: #fff;
+    margin-top: 4vh;
+}
+
+.ver-carrito{
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+.cantidad-carrito{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 5px;
+    display: none;
+}
+
+.banner{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-color: blanchedalmond;
+    background-image: url("/imagenes/ropa.jpg");
+}
+
+.banner-container{
+    text-align: center;
+    padding: 15% 0;
+}
+
+.banner h1{
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0,0,0.2);
+    font-size: 62px;
+    font-weight: bold;
+}
+
+.banner p{
+    margin: 0;
+    font-size: 35px;
+    color: white;
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    
+}
+
+/* productos card */
+
+.shop-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    max-width: 300px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card > img {
+    width: 80%;
+    height: 250px;
+}
+
+.price{
+    color: grey;
+    font-size: 22px;
+}
+
+.comprar{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.comprar:hover{
+    background-color: rgb(71, 71, 71);
+}
+
+/* modal contetent */
+
+.modal-container{
+    width: 80%;
+    margin: 0 10%;
+    color: #fff;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    /* overflow: scroll; */
+    top: 12vh;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #0c0c0c;
+    color: #fff;
+    width: 100%;
+}
+
+.modal-header-title{
+    justify-self: start;
+}
+
+.modal-header-button{
+    cursor: pointer;
+}
+
+.modal-header-button:hover{
+    opacity: 0.5;
+}
+
+.modal-container > .modal-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin-top: 5px;
+}
+
+.modal-container > div > img{
+    height: 100px;
+    width: 100px;
+}
+
+.total-content{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.delete-product {
+    cursor: pointer;
+}
+.delete-product:hover{
+    opacity: 0.5;
+}
+
+.sumar {
+    cursor: pointer;
+}
+.sumar:hover{
+    opacity: 0.5;
+}
+
+.restar{
+    cursor: pointer;
+}
+.restar:hover{
+    opacity: 0.5;
+}
