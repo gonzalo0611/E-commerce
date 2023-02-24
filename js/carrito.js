@@ -63,9 +63,32 @@ const pintarCarrito =() => {
 
     const totalBuying = document.createElement("div")
     totalBuying.className = "total-content"
-    totalBuying.innerHTML = `total a pagar: $${total}`
+    totalBuying.innerHTML = `Total a pagar: $${total}`
+
+    const botonfinalizarcompra = document.createElement("div")
+    botonfinalizarcompra.innerText= "Finalizar Compra"
+    botonfinalizarcompra.className= "finaliar-compra"
+
 
     modalContainer.append(totalBuying)
+    totalBuying.append(botonfinalizarcompra)
+
+    botonfinalizarcompra.addEventListener("click", finalizarcompra)
+
+    function finalizarcompra(){
+        Swal.fire({
+            title: `Esta seguro de realizar la compra`,
+            icon: `info`,
+            showCancelButton: true,
+            confirmButtonText: `Si, estoy seguro`,
+            confirmButtonColor: `green`,
+            cancelButtonColor: `red`
+        })
+    }
+}
+
+function finalizarcompra(){
+    console.log("funciona")
 }
 
 verCarrito.addEventListener("click", pintarCarrito)

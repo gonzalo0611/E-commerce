@@ -4,21 +4,23 @@ const modalContainer = document.getElementById("modal-Container")
 const bodyContent = document.getElementById("bodyContent")
 const cantidadCarrito = document.getElementById("cantidadCarrito")
 
+
 let carrito =  JSON.parse(localStorage.getItem("carrito")) || []
 
-let usuario = prompt("ingrese su nombre")
 
-let seleccion = prompt(`bienvenido ${usuario} desea comprar algun producto en la tienda si o no`)
+// let usuario = prompt("Ingrese su nombre")
 
-while(seleccion !="si" && seleccion !="no"){
-    alert("por favor ingrese si o no")
-    seleccion = prompt("hola desea comprar algun producto si o no")
-}if(seleccion == "si"){
-    alert("se mostrara la tienda")
-}else if(seleccion == "no"){
-    alert(`gracias por su visita ${usuario}`)
-    bodyContent.style.display = "none"
-}
+// let seleccion = prompt(`Bienvenido ${usuario} desea comprar algun producto en la tienda si o no`)
+
+// while(seleccion !="si" && seleccion !="no"){
+//     alert("por favor ingrese si o no")
+//     seleccion = prompt("Hola desea comprar algun producto si o no")
+// }if(seleccion == "si"){
+//     alert("Se mostrara la tienda")
+// }else if(seleccion == "no"){
+//     alert(`Gracias por su visita ${usuario}`)
+//     bodyContent.style.display = "none"
+// }
 
 
 productos.forEach((product) => {
@@ -33,10 +35,12 @@ productos.forEach((product) => {
     shopContent.append(content)
 
     let comprar = document.createElement("button")
-    comprar.innerText = "comprar"
+    comprar.innerText = "Comprar"
     comprar.className = "comprar"
+    comprar.id = "buttoncomprar"
 
     content.append(comprar)
+
 
     comprar.addEventListener("click", () =>{
 

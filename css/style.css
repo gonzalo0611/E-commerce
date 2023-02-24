@@ -3,11 +3,6 @@ body {
     background-color: rgb(238, 231, 217);
 }
 
-.nav-container{
-    position: sticky;
-    z-index: 3;
-    top: 0;
-}
 
 .navbar{
     display: flex;
@@ -21,11 +16,9 @@ body {
     margin-left: 20px;
     color: #fff;
     margin-top: 4vh;
-    /* cursor: pointer; */
 }
 
 .nav-container-footer{
-    position: sticky;
     z-index: 3;
     top: 0;
     margin-top: 30px;
@@ -34,7 +27,6 @@ body {
 .navbar-footer{
     display: flex;
     justify-content: space-around;
-    height: 12vh;
     background-color: #1b1b1b;
 }
 
@@ -55,10 +47,11 @@ body {
 .cantidad-carrito{
     background-color: red;
     color: white;
-    border-radius: 50%;
+    border-radius: 45%;
     font-size: 12px;
-    padding: 5px;
+    padding: 2px;
     display: none;
+    text-align: center;
 }
 
 .banner{
@@ -108,6 +101,7 @@ body {
     margin-top: 20px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
 }
 
 .card > img {
@@ -143,12 +137,11 @@ body {
     margin: 0 10%;
     color: #fff;
     background-color: #121212;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
-    /* overflow: scroll; */
-    top: 12vh;
+    position: absolute;
+    top: 10vh;
+    font-family: Arial, Helvetica, sans-serif; ;
 }
 
 .modal-header{
@@ -185,10 +178,28 @@ body {
 }
 
 .total-content{
+    display: flex;
     font-size: 25px;
-    padding: 20px;
     text-align: center;
-    padding-top: 20px;
+    background-color: #0c0c0c;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: space-around;
+}
+
+.finaliar-compra{
+    color: white;
+    background-color: #1b1b1b;
+    cursor: pointer;
+    border: 0;
+    border-radius: 15%;
+    width: 220px;
+}
+.finaliar-compra:hover{
+    opacity: .7;
+    background-color: greenyellow;
+    color: black;
 }
 
 .delete-product {
