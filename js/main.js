@@ -8,19 +8,19 @@ const cantidadCarrito = document.getElementById("cantidadCarrito")
 let carrito =  JSON.parse(localStorage.getItem("carrito")) || []
 
 
-// let usuario = prompt("Ingrese su nombre")
+let usuario = prompt("Ingrese su nombre")
 
-// let seleccion = prompt(`Bienvenido ${usuario} desea comprar algun producto en la tienda si o no`)
+let seleccion = prompt(`Bienvenido ${usuario} desea comprar algun producto en la tienda si o no`)
 
-// while(seleccion !="si" && seleccion !="no"){
-//     alert("por favor ingrese si o no")
-//     seleccion = prompt("Hola desea comprar algun producto si o no")
-// }if(seleccion == "si"){
-//     alert("Se mostrara la tienda")
-// }else if(seleccion == "no"){
-//     alert(`Gracias por su visita ${usuario}`)
-//     bodyContent.style.display = "none"
-// }
+while(seleccion !="si" && seleccion !="no"){
+    alert("por favor ingrese si o no")
+    seleccion = prompt("Hola desea comprar algun producto si o no")
+}if(seleccion == "si"){
+    alert("Se mostrara la tienda")
+}else if(seleccion == "no"){
+    alert(`Gracias por su visita ${usuario}`)
+    bodyContent.style.display = "none"
+}
 
 
 productos.forEach((product) => {
